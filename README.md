@@ -17,5 +17,5 @@ TBD
 | Modlet | Tested on game version  | Note |
 | :------------ | :------------- | :------------- |
 | Khelldon-BiggerBuckAndDoe| a20 b233 (stable) | WORKS - Tested |
-| Khelldon-BiggerChickenAndBunny| 20 b233 (stable)| WORKS - Tested |
-| Khelldon-GetHorny | 20 b233 (stable) | WORKS - Tested. Tested on all vanilla vehicles. [Youtube example](https://youtu.be/-wHA5mmyGn8)|
+| Khelldon-BiggerChickenAndBunny| a20 b233 (stable)| WORKS - Tested |
+| Khelldon-GetHorny | a20 b233 (stable) | WORKS - Tested. Tested on all vanilla vehicles. [Youtube example](https://youtu.be/-wHA5mmyGn8)|
