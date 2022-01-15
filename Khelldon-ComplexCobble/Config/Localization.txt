@@ -1,0 +1,5 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+khelldonMortar,items,Item,,,Mortar
+khelldonMortarDesc,items,Item,,,"Mortar is needed for the repair of brick and cobblestone blocks"
+khelldonMortarLime,items,Item,,,Lime
+khelldonMortarLimeDesc,items,Item,,,"Lime is needed to make mortar. Too bad this isn't something you can't just buy or find."

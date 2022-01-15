@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Khelldon - Complex Cobble" />
+		<Description value="Changes the recipes for cobblestone blocks to be more complex" />
+		<Author value="Doughphunghus,Khelldon" />
+		<Version value="a20.0-b238.1.0.00" />
+	</ModInfo>
+</xml>
