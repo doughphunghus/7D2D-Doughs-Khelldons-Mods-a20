@@ -1,0 +1,5 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+khelldonRebarBolt,items,Ammo,,,Rebar Bolt (Ammo)
+khelldonRebarBoltDesc,items,Ammo,,,"Rebar Bolts are powerful but heavy, great at close ranges. But get too close and it might go right through them and they might not even feel it."
+khelldonRebarBoltHot,items,Ammo,,,Hot Rebar Bolt (Ammo)
+khelldonRebarBoltHotDesc,items,Ammo,,,"Hot Rebar bolts are the same as normal rebar bolts but might light enemies on fire. How they stay hot and how you carry them is a mystery and if crafting magnetized them heating would demagnetize them. Effing Hot Rebar Bolts, how do they work?"
