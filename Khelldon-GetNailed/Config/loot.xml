@@ -1,0 +1,71 @@
+<Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+<!--
+Khelldon - Let's add a few bent nails around and while we are at it, let's up the number of nails found in garbage
+
+-->
+<append xpath="/lootcontainers/lootgroup[@name='groupCraftingCommon']">
+	<item name="resourceNailBent" count="1,4"/>
+</append>
+<set xpath="/lootcontainers/lootgroup[@name='groupCraftingCommon']/item[@name='resourceNail']/@count">2,14</set>
+
+
+<!--
+Khelldon - Make sure the crowbar spawns in a few differnet places
+-->
+<append xpath="/lootcontainers/lootgroup[@name='groupToolsT1']">
+	<item name="khelldonCrowbar"/>
+</append>
+<!--
+19 = cars
+88 = construction supplies shipping crate
+-->
+ <append xpath="/lootcontainers/lootgroup[@name='groupCars01']">
+	<item name="khelldonCrowbar" loot_prob_template="med"/>
+</append>
+ <append xpath="/lootcontainers/lootgroup[@name='groupConstructionCrate02']">
+	<item name="khelldonCrowbar" loot_prob_template="med"/>
+</append>
+
+<!--
+Khelldon - Add box of nails to working stiffs
+-->
+<append xpath="/lootcontainers/lootgroup[@name='groupBuildingUncommon']">
+	<item name="khelldonBoxNails" count ="1,3"/>
+</append>
+<!--
+15 = misc storage, cardboard boxes groupCardboardBox
+34 = Supply Crate General, the normal airdrop groupAirDrop
+88 = construction supplies shipping crate groupConstructionCrate
+92 = cntCollapsedWorkbench groupWorkbenchLoot
+-->
+<append xpath="/lootcontainers/lootgroup[@name='groupCardboardBox']">
+	<item name="khelldonBoxNails" loot_prob_template="low"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupAirDrop02']">
+	<item name="khelldonBoxNails" count="1,4" loot_prob_template="med"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupConstructionCrate01']">
+	<item name="khelldonBoxNails" count="1,2" loot_prob_template="medHigh"/>
+</append>
+<append xpath="/lootcontainers/lootgroup[@name='groupWorkbenchLoot01']">
+	<item name="khelldonBoxNails" count="1,2" loot_prob_template="medHigh"/>
+</append>
+
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+</Khelldon>

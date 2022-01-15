@@ -1,0 +1,107 @@
+<Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+<!--
+Khelldon - Add nuts and bolts to all the recipes that need them
+"or (contains(@name, 'RecipeNameGoesHere'))" adds ingredient to the recipe
+"and not(contains(@name, 'RecipeNameGoesHere'))" Will not add ingredient to this recipe
+DOUGH: a20. Try to make sure it doesn't get added to things with 5 ingredients already
+Added more blocks, scaled ingredient counts
+
+REMOVED: or (contains(@name, 'meleeToolAxeT2SteelAxe'))
+or (contains(@name, 'meleeToolPickT2SteelPickaxe'))
+or (contains(@name, 'meleeToolShovelT2SteelShovel'))
+or (contains(@name, 'meleeWpnSledgeT3SteelSledgehammer'))
+-->
+<!-- Melee Weapons and Tools. Things that need Just 1 Bolt -->
+<append xpath="/recipes/recipe[
+@name='meleeToolAxeT1IronFireaxe'
+or @name='thrownAmmoPipeBomb'
+or @name='meleeToolPickT1IronPickaxe'
+or @name='meleeToolShovelT1IronShovel'
+or @name='meleeWpnSledgeT1IronSledgehammer'
+or @name='meleeToolWireTool'
+or @name='switch'
+or @name='electrictimerrelay'
+]">
+	<ingredient name="khelldonNutsAndBolts" count="1"/>
+</append>
+
+<!-- Frames and other Blocks Things that need Nuts and bolts 
+-->
+<append xpath="/recipes/recipe[
+@name='meleeToolPickT3Auger'
+or @name='meleeToolPickT3Auger'
+or @name='meleeToolAxeT3Chainsaw'
+or @name='cntBeerCooler'
+or @name='cntDeskSafe'
+or @name='cntGunSafe'
+or @name='cntWallSafe'
+or @name='cntGreenDrawerSecure'
+or (contains(@name, 'cntMailBox'))
+or @name='officeChair01'
+or @name='ceilingLight01_player'
+or (contains(@name, 'industrialLight'))
+or @name='speaker'
+or @name='motionsensor'
+or @name='scrapHatch_v1'
+]">
+	<ingredient name="khelldonNutsAndBolts" count="4"/>
+</append>
+
+<append xpath="/recipes/recipe[
+@name='vaultHatch_v1'
+or @name='generatorbank'
+or @name='batterybank'
+or @name='spotlightPlayer'
+or @name='dartTrap'
+or @name='ironDoor1_v1'
+or @name='metalFurnitureBlockVariantHelper'
+or @name='ladderMetal'
+or @name='ladderSteel'
+]">
+	<ingredient name="khelldonNutsAndBolts" count="14"/>
+</append>
+
+<append xpath="/recipes/recipe[
+@name='rollUpDoor3x3VariantHelper'
+or (contains(@name, 'garageDoor'))
+or (contains(@name, 'metalReinforcedWoodDrawBridge'))
+or @name='vaultDoor01'
+]">
+	<ingredient name="khelldonNutsAndBolts" count="40"/>
+</append>
+
+<!--
+Khelldon - Add a recipe for the nuts and bolts in the forge
+-->
+
+<append xpath="/recipes">
+
+  <recipe name="khelldonNutsAndBolts" count="1" craft_area="forge" tags="perkAdvancedEngineering" material_based="true">
+  	<ingredient name="unit_iron" count="1"/>
+  	<ingredient name="unit_clay" count="1"/>
+  </recipe>
+
+  <!-- DOUGH: Added. Seems reasonable, take apart or sift through them for nits and bolts. kind of a waste probably -->
+  <recipe name="khelldonNutsAndBolts" count="7" material_based="true"> <!-- DOUGH: ha ha 7. But might be worth it?-->
+  	<ingredient name="resourceMechanicalParts" count="1"/>
+  </recipe>
+
+</append>
+
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+</Khelldon>

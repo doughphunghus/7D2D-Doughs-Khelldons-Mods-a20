@@ -1,0 +1,7 @@
+Key,Source,Context,UsedInMainMenu,NoTranslate,english
+resourceNailBent,items,Item,,,"Bent Nails"
+resourceNailBentDesc,items,Item,,,"You can probably straighten these out."
+khelldonBoxNails,items,Item,,,"Box of Khelldon brand nails"
+khelldonBoxNailsDesc,items,Item,,,"A regular box of Khelldon nails. Open it up to get some nails."
+khelldonCrowbar,items,Item,,,Crowbar,,,,,
+khelldonCrowbarDesc,items,Item,,,"Terrible for power attacking...but great for disassembling mechanical devices. Can take nails out of wooden blocks. Can also be used to repair and upgrade several things, but not all so on't be angry about it.\nRepair with Forged Steel.",,,,,

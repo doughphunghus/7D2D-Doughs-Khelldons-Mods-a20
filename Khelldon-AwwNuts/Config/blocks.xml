@@ -1,0 +1,153 @@
+<Khelldon>
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Starts Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
+
+
+<!--
+Khelldon - Let's find all the metal blocks and make sure you need nuts and bolts to repair them
+DOUGH: a20: removed scrapIronFrameMaster, added more blocks.
+Customized RepairItems counts
+-->
+
+<append xpath="/blocks/block
+[
+@name='scrapIronNoUpgradeMaster'
+or @name='rScrapIronMaster'
+or @name='ironDoor1_v1'
+or @name='scrapHatch_v1'
+]
+/property
+[
+@class='RepairItems'
+]">
+	<property name="khelldonNutsAndBolts" value="4"/>
+</append>
+
+<append xpath="/blocks/block
+[
+@name='vaultDoor01'
+or @name='manholeHatch'
+or @name='cellarDoorDoubleSteel'
+or @name='cellarDoorDoubleIron'
+]
+/property
+[
+@class='RepairItems'
+]">
+	<property name="khelldonNutsAndBolts" value="18"/>
+</append>
+
+<append xpath="/blocks/block
+[
+@name='garageDoorMetal_v1'
+or @name='garageDoorMetal_v3'
+]
+/property
+[
+@class='RepairItems'
+]">
+	<property name="khelldonNutsAndBolts" value="24"/>
+</append>
+
+<append xpath="/blocks/block
+[
+@name='garageDoorMetal_v1'
+or @name='garageDoorMetal_v3'
+or @name='garageDoorHousePlayer'
+]
+/property
+[
+@class='RepairItems'
+]">
+	<property name="khelldonNutsAndBolts" value="40"/>
+</append>
+
+<append xpath="/blocks/block
+[
+@name='garageDoorMetal_v1Powered'
+or @name='garageDoorIndustrial_Powered'
+or @name='rollUpDoor3x3White'
+or @name='rollUpDoor5x4White'
+or @name='rollUpDoor7x4White'
+or @name='metalReinforcedWoodDrawBridge'
+]
+/property
+[
+@class='RepairItems'
+]">
+	<property name="khelldonNutsAndBolts" value="50"/>
+</append>
+
+
+<!--
+Khelldon - Let's make it so you can use a wrench to take things apart that you get nuts and bolts
+Note: This will also work with the Crowbar if you have the "Get Nailed" modlet installed
+DOUGH: a20: removed scrapIronFrameMaster, added more blocks.
+Customized RepairItems counts
+-->
+
+<append xpath="/blocks/block
+[
+@name='scrapIronNoUpgradeMaster'
+or @name='rScrapIronMaster'
+or @name='ironDoor1_v1'
+or @name='scrapHatch_v1'
+or @name='fusebox'
+or @name='cntMicrowaveOvenVer1Open'
+or @name='controlPanelBase01'
+or @name='cntShoppingCartEmpty'
+or @name='cntShoppingCart'
+or @name='cntStoreShelfSingleBottomEmpty'
+or (contains(@name, 'satelliteDish'))
+]">
+	<drop event="Harvest" name="khelldonNutsAndBolts" count="1,3" tag="allHarvest"/>
+</append>
+<append xpath="/blocks/block
+[
+@name='vaultDoor01'
+or @name='vaultHatch_v1'
+or @name='airConditioner'
+or @name='airConditionVentFan'
+or @name='workbench'
+or @name='cntCollapsedWorkbench'
+or @name='cementMixer'
+or @name='cntCollapsedCementMixer'
+or @name='chemistryStation'
+or @name='cntCollapsedChemistryStation'
+or @name='generatorbank'
+or @name='cntCollapsedGeneratorbank'
+or @name='solarbank'
+or @name='cntCollapsedSolarbank'
+or @name='batterybank'
+or @name='cntCollapsedBatterybank'
+or @name='cntRetroFridgeVer1Closed'
+]">
+	<drop event="Harvest" name="khelldonNutsAndBolts" count="4,8" tag="allHarvest"/>
+</append>
+
+<append xpath="/blocks/block
+[
+@name='garageDoorMetal_v1'
+or @name='cntCar03SedanDamage0Master'
+or @name='metalReinforcedWoodDrawBridge'
+or @name='crushedCars'
+or @name='cntBusSchool'
+]">
+	<drop event="Harvest" name="khelldonNutsAndBolts" count="10,14" tag="allHarvest"/>
+</append>
+
+
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX    Khelldon - Modlet Ends Here     XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+</Khelldon>
